@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+"""square module"""
+
 
 class square():
-    
+    """Define a square"""
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
+        """initializing the square class attribute"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -15,10 +17,11 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.width * 2) + (self.height * 2)
+        return (4 * self.width)
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
