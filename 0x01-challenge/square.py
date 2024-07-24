@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" the square class module"""
+"""the square class module"""
 
 
 class Square():
@@ -8,6 +8,7 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """initialize the square class"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
