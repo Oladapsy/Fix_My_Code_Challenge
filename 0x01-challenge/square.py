@@ -4,8 +4,6 @@
 
 class square():
     """Define a square"""
-    width = 0
-    height = 0
 
     def __init__(self, *args, **kwargs):
         """initializing the square class attribute"""
@@ -20,12 +18,12 @@ class square():
         return (4 * self.width)
 
     def __str__(self):
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.width, self.width)
 
 
 if __name__ == "__main__":
 
-    s = square(width=12, height=9)
+    s = square(width=12)
     print(s)
     print(s.area_of_my_square())
     print(s.PermiterOfMySquare())
